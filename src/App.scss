@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "rubik";
+  src: url("https://fonts.google.com/specimen/Rubik");
+}
+.App {
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 55%;
+
+  background-size: auto 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  height: 100vh;
+
+  h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
