@@ -2,14 +2,16 @@ import React from "react";
 import "./search-bar.styles.scss";
 import arrow from "../../images/icon-arrow.svg";
 
-const SearchBar = () => (
+const SearchBar = ({ search, setSearch, onSubmit }) => (
   <div className="search-bar">
-    <form>
-      <input type="text"></input>
-      <button type="submit">
-        <img src={arrow} alt="arrow" />
-      </button>
-    </form>
+    <input
+      type="text"
+      value={search}
+      onChange={(event) => setSearch(event.target.value)}
+    ></input>
+    <button type="button" onClick={onSubmit}>
+      <img src={arrow} alt="arrow" />
+    </button>
   </div>
 );
 
