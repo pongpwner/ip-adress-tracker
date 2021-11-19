@@ -5,6 +5,13 @@
   font-family: "rubik";
   src: url("https://fonts.google.com/specimen/Rubik");
 }
+.leaflet-container {
+  height: 67vh;
+  width: 100vw;
+  z-index: 1;
+  bottom: 0;
+  position: absolute;
+}
 .App {
   background-image: url("./images/pattern-bg.png");
   background-repeat: no-repeat;
@@ -16,6 +23,7 @@
   align-items: center;
   background-color: gray;
   height: 100vh;
+  z-index: 2;
 
   h1 {
     color: white;
