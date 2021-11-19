@@ -7,7 +7,7 @@ const Result = ({ ip, location, timezone, isp }) => (
     <ResultInfo title="IP Adress" answer={ip} />
     <ResultInfo title="Location" answer={location} />
     <ResultInfo title="Timezone" answer={timezone} />
-    <ResultInfo title="ISP" answer={isp} />
+    <ResultInfo title="ISP" last answer={isp} />
   </div>
 );
 

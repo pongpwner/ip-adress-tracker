@@ -45,11 +45,21 @@ function App() {
         setPosition([0, 0]);
       });
   };
+  useEffect(() => {
+    onSubmit();
+  }, []);
   return (
-    <div>
-      <div className="App">
-        <h1>IP Adress Tracker</h1>
-        <SearchBar search={search} setSearch={setSearch} onSubmit={onSubmit} />
+    <div className="App">
+      <div className="content">
+        <header>
+          <h1>IP Adress Tracker</h1>
+          <SearchBar
+            search={search}
+            setSearch={setSearch}
+            onSubmit={onSubmit}
+            placeholder="Search for any IP adress"
+          />
+        </header>
         <Result ip={ip} location={location} timezone={timezone} isp={isp} />
       </div>
       <MapContainer center={position} zoom={18} scrollWheelZoom={false}>

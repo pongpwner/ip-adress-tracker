@@ -1,14 +1,59 @@
 .result {
   margin-top: 5%;
   background-color: white;
-  width: 85%;
+  width: 88%;
   margin: 7.5%;
   height: width;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding: 2%;
   z-index: 2;
-  min-height: 318.75px;
+}
+
+@media (orientation: landscape) {
+  .result {
+    margin-top: 5%;
+    background-color: white;
+    width: 88%;
+    margin: 7.5%;
+    height: width;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    z-index: 2;
+  }
+}
+@media (orientation: landscape) and (max-height: 412px) {
+  .result {
+    background-color: white;
+    width: 88%;
+    margin: 0%;
+    height: width;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    z-index: 2;
+  }
+}
+@media (min-width: 700px) {
+  .result {
+    margin: 4.5%;
+  }
+}
+@media (min-width: 1400px) {
+  .result {
+    width: 80vw;
+    margin: 2%;
+  }
+}
+@media (min-width: 1600px) {
+  .result {
+    margin: 2%;
+  }
 }

@@ -1,11 +1,14 @@
 .search-bar {
   display: flex;
   border-radius: 15px;
+  z-index: 2;
+
   input {
     border: none;
     padding: 6% 5%;
     border-radius: 10px 0 0 10px;
     width: 70vw;
+    font-size: 18px;
   }
   button {
     border: none;
@@ -13,5 +16,56 @@
     padding: 6% 5%;
     border-radius: 0 10px 10px 0;
     width: 15vw;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 412px) {
+  .search-bar {
+    display: flex;
+    border-radius: 15px;
+    z-index: 2;
+    width: 33vw;
+    margin: 2% 0 0 2%;
+
+    input {
+      border: none;
+      padding: 3% 2%;
+      border-radius: 10px 0 0 10px;
+      width: 70vw;
+      font-size: 18px;
+    }
+    button {
+      border: none;
+      background-color: black;
+      padding: 3% 2%;
+      border-radius: 0 10px 10px 0;
+      width: 15vw;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .search-bar {
+    display: flex;
+    border-radius: 15px;
+    z-index: 2;
+    width: 33vw;
+    height: 60px;
+    input {
+      border: none;
+      padding: 0% 5%;
+      border-radius: 10px 0 0 10px;
+      width: 70vw;
+      font-size: 18px;
+    }
+    button {
+      border: none;
+      background-color: black;
+      padding: 0% 5%;
+      border-radius: 0 10px 10px 0;
+      width: 20vw;
+      min-width: 40px;
+      max-width: 70px;
+    }
   }
 }
