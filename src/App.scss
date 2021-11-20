@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   background-position-x: 55%;
 
-  background-size: auto 33vh;
+  background-size: 100vw 33vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
     background-position-x: 55%;
 
-    background-size: auto 33vh;
+    background-size: 100vw 33vh;
 
     h1 {
       color: white;
@@ -71,13 +71,14 @@
     }
   }
 }
+
 @media (orientation: landscape) and (max-height: 412px) {
   .content {
     background-image: url("./images/pattern-bg.png");
     background-repeat: no-repeat;
     background-position-x: 55%;
 
-    background-size: contain;
+    background-size: 100vw 33vh;
     header {
       flex-direction: row;
       h1 {
@@ -89,8 +90,13 @@
     }
   }
 }
+@media (max-height: 200px) {
+  .content {
+    background-size: cover;
+  }
+}
 @media (min-width: 1680px) {
   .content {
-    background-size: contain;
+    background-size: 100vw 33vh;
   }
 }
